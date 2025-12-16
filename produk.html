@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk - Kopi Nusantara</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/—Pngtree—logo warung kopi_6444791.png" alt="Logo Kopi Nusantara" />
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="produk.html" class="active">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Section Produk -->
+  <section id="produk">
+    <h2 class="cobakk1">Daftar Produk Kopi Nusantara</h2>
+
+    <table border="1" cellspacing="0" cellpadding="8" align="center">
+      <tr>
+        <th>Gambar</th>
+        <th>Produk</th>
+        <th>Ukuran</th>
+        <th>Harga</th>
+        <th>Jenis Kopi</th>
+        <th>Deskripsi</th>
+      </tr>
+      <tr>
+        <td><img src="images/kopi1.jpg" alt="Kopi Arabika Gayo" width="200"></td>
+        <td>Kopi Arabika Gayo</td>
+        <td>250g</td>
+        <td>Rp 45.000</td>
+        <td>Arabika</td>
+        <td>Kopi khas Aceh dengan aroma kuat dan rasa halus. Cocok untuk penikmat kopi murni.</td>
+      </tr>
+      <tr>
+        <td><img src="images/arabikapetung.jpg" alt="Kopi Arabika Petungkriyono" width="200"></td>
+        <td>Kopi Arabika Petungkriyono</td>
+        <td>300g</td>
+        <td>Rp 48.500</td>
+        <td>Arabika</td>
+        <td>Ditanam di ketinggian 1.200 mdpl, rasa seimbang antara asam dan manis.</td>
+      </tr>
+      <tr>
+        <td><img src="images/kopi robusta.jpg" alt="Kopi Robusta Batang" width="200"></td>
+        <td>Kopi Robusta Batang</td>
+        <td>250g</td>
+        <td>Rp 46.000</td>
+        <td rowspan="3">Robusta</td>
+        <td>Rasa pahit lembut dengan aroma khas tanah Jawa Tengah.</td>
+      </tr>
+      <tr>
+        <td><img src="images/liberika.jpg" alt="Kopi Liberika Riau" width="200"></td>
+        <td>Kopi Liberika Riau</td>
+        <td>250g</td>
+        <td>Rp 42.000</td>
+        <td>Aroma unik dengan rasa sedikit fruity dan lembut di lidah.</td>
+      </tr>
+      <tr>
+        <td colspan="6" align="center"><b>Semua harga sudah termasuk PPN</b></td>
+      </tr>
+    </table>
+
+    <!-- Media (video/audio) -->
+    <div style="text-align:center; margin-top:40px;">
+      <video width="500" controls>
+        <source src="videos/video iklan kopi cinematic.mp4" type="video/mp4">
+        Browser Anda tidak mendukung pemutaran video.
+      </video>
+
+      <h3 style="margin-top:30px;">Dengarkan Cerita Kami</h3>
+      <audio controls>
+        <source src="audio/ssstik.io_1757937009071.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutaran audio.
+      </audio>
+    </div>
+  </section>
+
+  <div class="wishlist-card" aria-label="Daftar Wishlist Produk">
+    <h3>Daftar Wishlist Produk</h3>
+
+    <form id="wishlistForm">
+      <input type="text" id="produkInput" placeholder="Nama produk..." />
+      <p>Preview: <span id="previewProduk"></span></p>
+      <button id="tambahBtn">Tambah Produk</button>
+    </form>
+
+    <ul id="daftarProduk"></ul>
+
+    <hr />
+
+    <label for="temaSelect">Pilih Tema Warna: </label>
+    <select id="temaSelect">
+      <option value="white">Putih</option>
+      <option value="lightblue">Biru Muda</option>
+      <option value="lightyellow">Kuning Muda</option>
+    </select>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kopi Nusantara | Semua Hak Dilindungi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami - Kopi Nusantara</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/—Pngtree—logo warung kopi_6444791.png" alt="Logo Kopi Nusantara" />
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html" class="active">Tentang Kami</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tentang">
+      <h2 class="judul">Tentang Kopi Nusantara</h2>
+      <p>
+        Kopi Nusantara berdiri sejak 2015 sebagai UMKM yang berkomitmen menghadirkan cita rasa kopi terbaik dari seluruh penjuru Indonesia.
+        Kami bekerja langsung dengan petani lokal untuk memastikan setiap biji kopi yang Anda nikmati memiliki kualitas unggul dan aroma khas daerah asalnya.
+      </p>
+    </section>
+
+    <section id="produk-unggulan">
+      <h3 class="cobakk1">Produk Unggulan:</h3>
+      <ul>
+        <li>Kopi Arabika Gayo – aroma kuat dan rasa lembut</li>
+        <li>Kopi Robusta Temanggung – cita rasa pekat dan berkarakter</li>
+        <li>Kopi Liberika Riau – aroma unik dengan rasa fruity</li>
+        <li>Kopi Arabika Petungkriyono – seimbang antara manis dan asam</li>
+      </ul>
+    </section>
+
+    <!-- Profil Produk singkat + Rating -->
+    <section id="profil-produk">
+      <div class="rating-container">
+        <div class="rating-box">
+          <h4>Kopi Arabika Gayo</h4>
+          <p><img src="images/Arabika-GAYO.jpg" alt="Kopi Arabika Gayo" class="product-image" width="250"></p>
+          <p>Kopi khas Aceh dengan aroma segar dan rasa asam yang halus.</p>
+          <p><strong>Rating Produk:</strong> <span id="hasil-rating1">—</span></p>
+          <p id="rekomendasi1" style="font-weight:600; margin-top:8px;"></p>
+        </div>
+
+        <div class="rating-box">
+          <h4>Kopi Robusta Temanggung</h4>
+          <p><img src="images/kopi robusta.jpg" alt="Robusta Temanggung" class="product-image" width="250"></p>
+          <p>Kopi pekat dengan aroma khas pegunungan.</p>
+          <p><strong>Rating Produk:</strong> <span id="hasil-rating2">—</span></p>
+          <p id="rekomendasi2" style="font-weight:600; margin-top:8px;"></p>
+        </div>
+
+        <div class="rating-box">
+          <h4>Kopi Liberika Riau</h4>
+          <p><img src="images/liberika.jpg" alt="Kopi Liberika Riau" class="product-image" width="250"></p>
+          <p>Aroma unik dan rasa fruity yang lembut.</p>
+          <p><strong>Rating Produk:</strong> <span id="hasil-rating3">—</span></p>
+          <p id="rekomendasi3" style="font-weight:600; margin-top:8px;"></p>
+        </div>
+
+        <div class="rating-box">
+          <h4>Kopi Arabika Petungkriyono</h4>
+          <p><img src="images/arabikapetung.jpg" alt="Kopi Arabika Petungkriyono" class="product-image" width="250"></p>
+          <p>Seimbang antara manis dan asam, cocok untuk berbagai metode seduh.</p>
+          <p><strong>Rating Produk:</strong> <span id="hasil-rating4">—</span></p>
+          <p id="rekomendasi4" style="font-weight:600; margin-top:8px;"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan unggulan yang dibuat dinamis -->
+    <section id="layanan">
+      <h3 class="cobakk1">Layanan Unggulan:</h3>
+      <ul id="layanan-list"></ul>
+    </section>
+
+    <section id="tahapan">
+      <h3 class="cobakk1">Proses Produksi Kami:</h3>
+      <ol>
+        <li>Pemilihan biji kopi terbaik dari petani lokal</li>
+        <li>Penjemuran alami di bawah sinar matahari</li>
+        <li>Proses sangrai tradisional untuk mempertahankan cita rasa</li>
+        <li>Penggilingan sesuai tingkat kehalusan yang diinginkan</li>
+        <li>Pengemasan higienis dan siap dikirim ke pelanggan</li>
+      </ol>
+    </section>
+
+    <!-- Form pemesanan sederhana dengan validasi -->
+    <section id="form-pemesanan" class="form-pemesanan">
+      <h3 class="cobakk1">Form Pemesanan</h3>
+      <form onsubmit="return cekForm()" novalidate>
+        <div style="margin-bottom:10px;">
+          <label for="namaProduk">Nama Produk</label>
+          <input type="text" id="namaProduk" placeholder="Nama Produk">
+        </div>
+        <div style="margin-bottom:10px;">
+          <label for="jumlah">Jumlah</label>
+          <input type="number" id="jumlah" placeholder="Jumlah">
+        </div>
+        <button type="submit" class="btn-pesan">Pesan</button>
+      </form>
+    </section>
+
+    <section id="kunjungi">
+      <h3 class="cobakk1">Kunjungi Kami:</h3>
+      <p>
+        Temukan cerita di balik setiap biji kopi dan nikmati konten terbaru kami di Instagram:<br>
+        <a href="https://instagram.com/kopinusantara" target="_blank">@kopinusantara</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kopi Nusantara | Semua Hak Dilindungi</p>
+  </footer>
+
+  <!-- ======= Script tambahan (setiap produk punya skrip if sendiri) ======= -->
+  <script>
+    // PRODUK 1
+    let rating1 = 4.2; // ubah nilai di sini untuk Produk 1
+    if (rating1 >= 4.5) {
+      document.getElementById("hasil-rating1").textContent = "★★★★★";
+      document.getElementById("rekomendasi1").textContent = "Sangat Disarankan";
+    } else if (rating1 >= 3) {
+      document.getElementById("hasil-rating1").textContent = "★★★";
+      document.getElementById("rekomendasi1").textContent = "Rekomendasi Biasa";
+    } else {
+      document.getElementById("hasil-rating1").textContent = "★";
+      document.getElementById("rekomendasi1").textContent = "Tidak Direkomendasikan";
+    }
+
+    // PRODUK 2
+    let rating2 = 3.0; // ubah nilai di sini untuk Produk 2
+    if (rating2 >= 4.5) {
+      document.getElementById("hasil-rating2").textContent = "★★★★★";
+      document.getElementById("rekomendasi2").textContent = "Sangat Disarankan";
+    } else if (rating2 >= 3) {
+      document.getElementById("hasil-rating2").textContent = "★★★";
+      document.getElementById("rekomendasi2").textContent = "Rekomendasi Biasa";
+    } else {
+      document.getElementById("hasil-rating2").textContent = "★";
+      document.getElementById("rekomendasi2").textContent = "Tidak Direkomendasikan";
+    }
+
+    // PRODUK 3
+    let rating3 = 4.8; // ubah nilai di sini untuk Produk 3
+    if (rating3 >= 4.5) {
+      document.getElementById("hasil-rating3").textContent = "★★★★★";
+      document.getElementById("rekomendasi3").textContent = "Sangat Disarankan";
+    } else if (rating3 >= 3) {
+      document.getElementById("hasil-rating3").textContent = "★★★";
+      document.getElementById("rekomendasi3").textContent = "Rekomendasi Biasa";
+    } else {
+      document.getElementById("hasil-rating3").textContent = "★";
+      document.getElementById("rekomendasi3").textContent = "Tidak Direkomendasikan";
+    }
+
+    // PRODUK 4
+    let rating4 = 3.5; // ubah nilai di sini untuk Produk 4
+    if (rating4 >= 4.5) {
+      document.getElementById("hasil-rating4").textContent = "★★★★★";
+      document.getElementById("rekomendasi4").textContent = "Sangat Disarankan";
+    } else if (rating4 >= 3) {
+      document.getElementById("hasil-rating4").textContent = "★★★";
+      document.getElementById("rekomendasi4").textContent = "Rekomendasi Biasa";
+    } else {
+      document.getElementById("hasil-rating4").textContent = "★";
+      document.getElementById("rekomendasi4").textContent = "Tidak Direkomendasikan";
+    }
+
+    // Layanan dinamis
+    (function() {
+      const layanan = ["Gratis Ongkir", "Bayar di Tempat", "Garansi 30 Hari"];
+      const list = document.getElementById("layanan-list");
+      layanan.forEach(function(item) {
+        const li = document.createElement("li");
+        li.textContent = item;
+        list.appendChild(li);
+      });
+    })();
+
+    // Validasi form
+    function cekForm() {
+      const nama = document.getElementById("namaProduk").value.trim();
+      const jumlah = document.getElementById("jumlah").value.trim();
+
+      if (nama === "" || jumlah === "") {
+        alert("Semua kolom wajib diisi.");
+        return false;
+      }
+
+      const jumlahNum = Number(jumlah);
+      if (isNaN(jumlahNum) || jumlahNum <= 0) {
+        alert("Jumlah harus berupa angka lebih dari 0.");
+        return false;
+      }
+
+      alert("Pemesanan berhasil dikirim!");
+      return true;
+    }
+  </script>
+</body>
+</html>
